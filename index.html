@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>To Do List</title>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">To Do List</h1>
+      <h2 class="text">待辦事項</h2>
+      <form class="new-event-form">
+        <input type="text" class="inputText" placeholder="請輸入待辦事項" />
+        <input type="submit" class="addBtn" / value="新增">
+      </form>
+
+      <div class="eventbox hidden">
+        <ul class="eventHead">
+          <li class="eventText active">全部</li>
+          <li class="eventText">待完成</li>
+          <li class="eventText">已完成</li>
+        </ul>
+      </div>
+      <div class="events">
+        <!-- <div class="event">
+          <div class="content">
+            <input type="text" class="text" value="A new task" readonly />
+          </div>
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <script charset="UTF-8" src="script.js"></script>
+  </body>
+</html>

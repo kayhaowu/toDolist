@@ -1,0 +1,157 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #687280;
+  --light: #eee;
+  --pink: #ec4899;
+  --purple: #5b5cf6;
+  --blue: #3498db;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  text-align: center;
+  margin: 10% auto;
+  border-top: 30px solid red;
+  border-radius: 10px;
+  width: 80%;
+  padding: 40px;
+  box-shadow: 10px 10px 25px #00000080;
+}
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 10px;
+}
+form {
+  border: #000;
+}
+.inputText {
+  padding: 20px 0;
+  font-size: 1.125rem;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  width: 80%;
+  margin: 10px auto;
+  border: 2px solid #000;
+}
+.inputText:hover {
+  border-color: #0291f0;
+  transition: 0.5s;
+}
+.inputText:focus {
+  border-color: #0291f0b0;
+  width: 80%;
+  transition: 0.5s;
+}
+
+.addBtn {
+  width: 20%;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  border: #fff;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+/* .hidden {
+  display: none;
+} */
+
+.eventbox {
+  margin: 10px auto;
+  width: 80%;
+  border: 2px solid;
+  border-radius: 5px;
+  color: #9f9a91;
+}
+.eventHead {
+  list-style: none;
+  display: flex;
+}
+.eventText {
+  padding: 10px 0;
+  color: #c2bdbd;
+  flex: 1;
+  border-bottom: 2px solid #efefef;
+}
+
+.eventText:hover {
+  color: #8f8989;
+  flex: 1;
+  border-bottom: 2px solid #8f8989;
+}
+.active {
+  color: #000;
+  border-color: #000;
+  font-weight: bold;
+}
+
+.events .event {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.events .event .content .text {
+  font-size: 1.125rem;
+  display: block;
+  transition: 0.4s;
+}
+
+.events .event .content .text:not(:read-only) {
+  color: var(--gray);
+}
+
+.events .event .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.event .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.event .actions button:hover {
+  opacity: 0.8;
+}
+.event .actions button:active {
+  opacity: 0.6;
+}
+.event .actions .edit {
+  color: #000;
+}
+.event .actions .delete {
+  color: crimson;
+}
